@@ -1,21 +1,21 @@
 package protoss;
 
 //오브젝트(객체)는 상태와 행동을 가진다.
-public class Zealot implements Protoss {
-	public Zealot() {
-		this(100, 100, 20, 1);
+public class DarkTempler implements Protoss {
+	public DarkTempler() {
+		this(100, 100, 40, 5);
 	}
 
 	// 매개변수의 타입이 다르거나, 개수가 다르면 오버로딩
-	public Zealot(int st, int sh, int attack, int armor) {
+	public DarkTempler(int st, int sh, int attack, int armor) {
 		this.st = st;
 		this.sh = sh;
 		this.attack = attack;
 		this.armor = armor;
-		System.out.println("I had returned");
+		System.out.println("DarkTempler의울음소리왈왈");
 	}
 
-	final String name = "드라군";
+	final String name = "다크템플러";
 	int st; // 체력
 	int sh; // 쉴드 (보호막)
 	int attack;

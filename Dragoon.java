@@ -1,7 +1,7 @@
 package protoss;
 
 //오브젝트(객체)는 상태와 행동을 가진다.
-public class Dragoon {
+public class Dragoon  implements Protoss  {
 public Dragoon() {
 this(100,100,16,1);
 }
@@ -23,5 +23,32 @@ int st; //체력
 int sh; //쉴드 (보호막)
 int attack;
 int armor;
+
+
+@Override
+public String getName() {
+	return name;
+}
+@Override
+public int getSh() {
+	return sh;
+}
+@Override
+public int getSt() {
+	return st;
+}
+@Override
+public int getAttack() {
+	return attack;
+}
+@Override
+public int getArmor() {
+	return armor;
+}
+
+@Override
+public void setSh(int sh) {
+	this.sh = sh;
+}
 	
 }
